@@ -36,7 +36,7 @@ public class UserDaoTest {
 
 	@Test
 	public void testAddUser() {
-		//log.info("添加数据");
+		log.info("添加数据");
 		User user = new User();
 		user.setUsername("username");
 		user.setPassword("password");
