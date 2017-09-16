@@ -13,7 +13,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.github.pagehelper.PageHelper;
-import com.jungle.sample.model.User;
+import com.jungle.example.dao.UserDao;
+import com.jungle.example.model.User;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({"/ApplicationContext.xml"})
 public class UserDaoTest {

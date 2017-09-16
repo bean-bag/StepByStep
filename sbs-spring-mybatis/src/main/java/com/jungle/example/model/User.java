@@ -1,4 +1,4 @@
-package com.jungle.sample.model;
+package com.jungle.example.model;
 
 public class User {
 	private int id;
