@@ -1,4 +1,4 @@
-package com.jungle.sample.dao;
+package com.jungle.example.dao;
 
 import static org.junit.Assert.*;
 
