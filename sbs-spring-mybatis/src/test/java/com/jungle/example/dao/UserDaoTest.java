@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import java.util.List;
 
+import org.apache.ibatis.session.RowBounds;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -12,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;	
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.github.pagehelper.PageHelper;
 import com.jungle.example.dao.UserDao;
 import com.jungle.example.model.User;
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -29,9 +29,9 @@ public class UserDaoTest {
 		user.setUsername("username");
 		user.setPassword("password");
 		
-		PageHelper.offsetPage(5, 5);
+		//PageHelper.offsetPage(5, 5);
 		
-		List<User> num = userDao.queryUser(user);
+		List<User> num = userDao.queryUser(user,new RowBounds(5,5));
 		assertEquals(2, num.size());
 	}
 

@@ -33,7 +33,4 @@
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean>
 
-	<!-- <bean id="userDao" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
-		<property name="mapperInterface" value="com.springMyBatis.system.dao.UserDao" 
-		/> <property name="sqlSessionFactory" ref="sqlSessionFactory" /> </bean> -->
 </beans>
